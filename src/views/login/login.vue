@@ -1,19 +1,24 @@
 <template>
   <div class="login">
-    <LoginPanel />
+    <login-panel />
   </div>
 </template>
+
 <script lang="ts">
 import { defineComponent } from 'vue'
 import LoginPanel from './cpns/login-panel.vue'
+
 export default defineComponent({
-  name: 'login',
   components: {
     LoginPanel
+  },
+  setup() {
+    return {}
   }
 })
 </script>
-<style lang="less" scoped>
+
+<style scoped lang="less">
 .login {
   display: flex;
   justify-content: center;
